@@ -29,7 +29,10 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  position: fixed;
+  width: 100%;
+  background-color: #203040e8;
+  backdrop-filter: blur(5px)
 }
 main {
   grid-area: main;
@@ -80,12 +83,17 @@ a.brand {
 
 img {
   border-radius: 0.5rem;
+  padding: 0 10px;  
 }
 img.medium {
   max-width: 25rem;
   min-width: 20rem;
   max-height: 30rem;
   width: 100%;
+}
+img.large{
+  width: 50%;
+  margin: auto;
 }
 /* card */
 .card {
@@ -108,4 +116,45 @@ img.medium {
 .rating i{
     color: #f0c040;
     margin: .1rem;
+}
+.row.top{
+  align-items: flex-start;
+}
+.col-1{
+  flex: 1 1 25rem;
+}
+.col-2{
+  flex: 2 1 50rem;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+button{
+  padding: 1rem;
+  border: 1px solid #a4a4a4;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+button:hover{
+  border: .1rem solid #404040;
+}
+button.primary{
+  background-color: #f0c040;
+
+}
+button.block{
+  width: 100%;
+}
+/* alert */
+.success{
+  color: #20a20a;
+}
+.error{
+  color: red;
 }

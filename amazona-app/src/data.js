@@ -1,4 +1,4 @@
-const data = {
+export const data = {
     products:[
         {
             _id: '1',
@@ -6,7 +6,8 @@ const data = {
             catagory: 'Shirts',
             price: 120,
             brand: 'Nike',
-            rating: 4.5,
+            rating: 5,
+            countInStock: 2,
             numberReviews: 10,
             description: 'High Quality Products',
             image: 'https://m.media-amazon.com/images/I/81AkDbTqA3L._AC_UL320_.jpg'
@@ -17,6 +18,7 @@ const data = {
             catagory: 'Shirts',
             price: 130,
             brand: 'Adidas',
+            countInStock: 1,
             rating: 4.4,
             numberReviews: 13,
             description: 'High Quality Products',
@@ -40,7 +42,7 @@ const data = {
             catagory: 'Pant',
             price: 100,
             brand: 'Nike',
-            rating: 4.5,
+            rating: 4,
             numberReviews: 10,
             description: 'High Quality Products',
             image: 'https://m.media-amazon.com/images/I/71e7n5XOr5S._AC_UL320_.jpg'
@@ -62,6 +64,7 @@ const data = {
             catagory: 'Pant',
             price: 100,
             brand: 'Puma',
+            countInStock: 12,
             rating: 4.8,
             numberReviews: 6,
             description: 'High Quality Products',
@@ -69,4 +72,3 @@ const data = {
         },
     ]
 }
-export default data;
